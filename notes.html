@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      img {width: 50%}
+      .box {
+        width: 500px;
+        border: 5px;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>HTML NOTES</title>
+    <meta name="description" content="Roughly 155 characters">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <H1>HTML NOTES</H1>
+    <h2>HyperText Markup Language</h2>
+    <p>Web is made up of documents and other resources that reference one another with hyperlinks. Web browsers display web pages stored on servers after sending and receiving a request.
+        <br>The browser requests other referenced files baed on the information contained in the HTML file.
+        <br>HTTP is the HyperText Transfer Protocol. HTTPS is the secure version of this protocol (rules to talk to web server).
+        <br> <ul><li>Syntax are the grammar rules of a computer language
+            <li>Formalism refers to computers being stupid and taking things literally. Be careful what you type.
+                <li> Nesting is bits of code going inside other in an orderly way</li>
+                <li>Stuck or confused?? Read documentation and Google</li>
+                <li><a href="https://developer.mozilla.org/">Mozilla Developer Network:</a> Very good resource</li>
+            </ul>
+            <p>HTML is written in text (letters, numbers, symbols spaces). Browser takes HTML and displays page layout, which user sees. Can have links and references to other files embedded inside displayed web page.
+              Markup makes text look different than plain text.
+              <br> & lt ; creates open bracket symbol around element that will be ignored by browser and display text. <br>
+              & gt ; creates close bracket to display element without using element in browser<br>
+              delete space between letters and semicolon for it ot work. Shown below.
+
+              <br>&lt;em&gt;Hi there!&lt;em&gt; : Emphasis element makes text look like this: <em>Hi there!</em>
+            Every elmenent needs start tag with angle brackets and closing tag with slash and angle brackets.
+
+            </p>
+        <br><a href="https://code.visualstudio.com/">VS Code:</a> A popular and good text editor for HTML. Or use notepad. Or Geany.
+        <br> DO NOT use a word processor, or you'll get gibberish. <br>
+        A good text editor for HTML has syntax highlighting and line numbers. Make sure html files have .HTML extension.
+
+
+
+
+
+
+
+
+
+        <p>
+          <h3>Whitespace</h3>Whitespace (spaces, tabs and line breaks)
+          gets collapsed into single space. Need other elements and tags to prettify text and make it look interesting and laid out.
+          <br>
+          &lt;br&gt; LINE BREAK element returns wew line<br>
+          Like right <br>
+          here <br>
+          . Each line break is made with br element. Doesn't need closing tag<br> br is also void or empty tag.
+<p>
+          P elment is better for double line than 2 br elements. Good to "tell the trush" in HTML. If something is a pararaph. Call it that with P element.
+</p>
+<br> Remember: computers are stupid. Take everything literally. So give precise and correct instructions.
+
+<h2>More Elements</h2>
+&lt;mark&gt; and its closing tag highlight text. <mark>Like this.</mark>
+<br>&lt;sup&gt; (not super, derp) makes text a superscript. Like<sup> this</sup>.
+<br>&lt;sub&gt; and its closing tab make text subscript. Like <sub>this</sub>.
+<p>
+<strong>Nesting</strong> means something can go inside something else. Think Matroshka dolls. Or elments one inside another.
+<br>Paragraph elment usually has br tags inside or sup tags or mark.
+<br>Can't put paragraph inside another. elements can't overlap. One needs to be completely inside another
+<br></p>
+<h2>Headings</h2>Used headings of pages. H1 is main. 2-6 are subheadings. Smaller ones go inside bigger ones to show that sections are inside another. Same level heading would use same element. Be at same leve of importance / organizaton.
+
+
+<h1>H1 Main Heading</h1>
+<h2>H2 Rest are subheadings</h2>
+<h3>H3</h3>
+<h4>H4</h4>
+<h5>H5</h5>
+<h6>H6 is smallest subheading</h6>Like this:
+<h1>My HTML Notes - is H1</h1>
+<p>This page is a collection of my awesome notes about HTML!</p>
+<h2>The Web - is H2</h2>
+<p>The Web (or World Wide Web) is a collection of documents and other files. Most of the documents are made using Hypertext Markup Language (HTML).</p>
+<h2>What is HTML? - is H2</h2>
+<p>HTML stands for <em>Hypertext Markup Language</em>. It's used to define the structure or layout of a web page.</p> s
+<p><strong>So don't actually have to use p element after heading - - - - ihavent' been - - -- but good idea to dod it to signify someithng is a paragraph. Tell what something is.</strong></p>
+
+
+
+br element just contains text
+p creats invisible box around text with height, width and margins around it. is block elment
+inline elelment does not make box around text br, img, span. flow with text they are used in
+<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements">Block-level elements — https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements
+      </a>
+
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Elements">Inline Elments</a>
+
+<p>This makes the margins and borders around p block visible</p>
+<p>
+
+Call me Ishmael.    <em>i dunno why they br br part here is also boxed out.... do notes now. look up later</em>
+<br><br>
+Just don't call me late for dinner.
+
+<p class="marge">Call me Ishmael.</p> this part is and should be boxed out. check <a href="https://learn.udacity.com/nanodegrees/nd0011-oneten-p1/parts/cd0038/lessons/ls0535/concepts/c7823f3e-89cd-412b-8f8e-35b86399eb7d">for udacity example</a>
+<p class="marge">Just don't call me late for dinner.</p>
+
+<p><strong>div</strong>element  is block element. creates divisiotn to divide page into sections. also creates
+invisible box around things with border, margin, width, height, etc. <br>
+super important: used  lot. lays out, organizes pages.<br>
+P element specifically contains text. div generic container can contain anything. used to organize page content into sections
+</p>
+<strong>removed border since it didn't pass validation. look up how to do properly without errors</strong>
+
+
+<h2>implied closing tags and lists</h2>
+<p>Doesn't actually need closing tag. I think use it anyway. VS code auto adds it.</p>
+<p><ul><li>
+ol makes ordered lists</li>
+<li>ul makes unordered lists</li>
+<li>li makes list lines inside ol and ul tags</li>
+</ul>
+ ul, ol need closing tags! to tell browser list has ended<br>
+ li has optional closing tag apparently. VS code auto adds them.
+<ol><li>1</li><li>and 2</li></ol><br>this is an ordered list <br>
+
+<h3>Special options for lists </h3><br>add type = " special identifier " after ol to change thing.
+<ul>
+
+<li>1 is for numbes, it's the default<li>
+A is for uppercase letters<li>
+a is for lowercase letters<li>
+I is for upppercase Roman numerals<li>
+i is for lowercase Roman numerals
+</ul>
+<h3>Indentation of HTML code</h3><p>Indentation can help show the nested structure of the elements.</p>
+<p>It can also make the code <em>much</em> easier to read! <a href="https://granneman.com/webdev/coding/formatting-and-indenting-your-html">Info about indentation and guidelines</a></p>
+<p><strong>update notes to make indentation pretty for assignment submission</strong></p>
+
+
+<h3>Web Addresses</h3>
+<p>
+http://wikipedia.org is fully qualified web URL. Has protocol and domain name. Doesn't need full file path after domain name
+<br>
+file:///Users/Kelly/notes.html Lo cal URL does need full file path
+<br>
+both are fully qualified URLs
+<br>
+a element is inline element. it's the anchor element. a href = "url" . then text that's displayed on page (contents), then closing tag <br>
+href is the hypertext reference element. references an URL<br><br> LInks within single website can be relative URLs. <br>
+a href="https://example.com/" target="_blank" will open in new window or tab
+
+
+
+<h3>Images</h3>
+<p>img element points browser to image location without embedding image in HTML. needs src (source URL) and alt (for SEO, text browsers, accessibility text description) attributes</p>
+<br>empty element. No need closing tag. Integrates directly into text. influencing layout based on size.<br>
+<p>Image as link? Put img element inside a element. Like this:</p>
+<p><a href="https://placebear.com/g/500/200"><img src="https://placebear.com/g/500/200" alt="placebear"></a></p><br>
+Be careful about relative URLS vs fullly qualified URLs. Can use relative to link stylesheet.css or something inside same directory. Be careful<br>
+<p>placebear.com very good site for image placeholders. use slash / and then number representing width then slash / number representing height to grab an image for HTML<br>
+Like https://placebear.com/200/300 (that's absolute URL)<a href="https://picsum.photos/">Lorem Picsum is a good placeholder site too</a></p>
+
+<h3>Block Elements</h3>
+<p>Block elements hold large sections of things... creates box around things. Takes full width of display by default. starts on new line.
+  <br>Hae defaults to them. p has margins. lists have bullet points or nmbered items. Headlines print large text. <br><strong>div</strong> is gneric block element without defaults
+</p>
+<p><ul><li>P paragraph Text has small margin to separate from other text</li>
+<li>ul and ol are unordered (bullet poitns) and ordered lists (number)</li>
+<li>li houses nexted ul or ol elemtns for lists. can't occur on own</li>
+<li>h1 to h6 are section headers for headlines, section titles. etc</li>
+<li>div Logical division of page or document. <br>Don't have default display settings. Need custom styling with CSS<br>Other block elements like p or li or headers can be nexted inside div</li>
+</ul>
+
+
+<h3>open angle bracket !DOCTYPE html close angle bracket</h3>
+Tells browser it's a modern html document
+
+
+<h3>Inline Elements</h3>
+<p><ul>
+<li>em and strong create <em>italics</em> and <strong>boldface</strong></li>
+<li>br is line break (emtpy). marks the end of the line</li>
+<li>sub and sup are usrful for chem and math</li>
+<li>mark <mark>highlights</mark></li>
+
+
+
+</ul>
+
+
+
+
+
+
+
+<h3>FULL HTML - Head and Body</h3>
+DOCTYPE tag, title elment with oopen and closing tag in head element both <strong>required</strong><br>
+Body tags open and close go afer html and head tags.<br>
+lang = "en" goes in html open tag outside hed element <br>
+
+
+<p>spacer</p>
+
+
+
+        <div class="box border">
+        <h2>Tittile 1 </h2>
+        <img src="https://duckduckgo.com/assets/sports/mlb/Dodgers.svg" alt="Go Dodgers!">
+        <p> Paragraph </p>
+      </div>
+    <!-- Content -->
+
+
+
+
+
+
+<br>
+<h3>text marksup</h3>
+references
+markup tells browser how text should be styled. how it should look. also tells browser how to display references
+makes thigs look different
+
+<em>ELEMENT goes between tags. whole thing also called element?</em> tag keyword is in paired angle brackets. whole thing is opening and closing tag
+
+In practice, you'll often see people (including us!) mix up the terms element and tag. You can usually tell what they mean by the context.
+
+<br><br> udacity says that 2 brbr tags will behave like p tag. but does not work in firefox right now today
+<br>
+
+
+Did you
+know? all white space gets collapsed to single space.
+    Spaces,
+	tabs,
+and line
+breaks     are     called
+     <strong>whitespace</strong>.
+
+
+void / empty elements <br> <br>do not have closing tags. <p>since they don't contain anything (br, img)</p> paragraph tags add line of whitespace, where br tags do not
+
+
+
+George Ingram says this is good site to see browser stuff: differences, quirks https://caniuse.com/?search=order
+
+opening tag is always tag with attributes
+
+<br>
+divs keep things separated in "boxes or containers" parent div encloses child elements. so computer and read them as separate things.
+
+section can be used in place of div. div is very old way of doing it. secitions are for helping SEO, more modern. can say "this is one section, main article, aside content, etc"
+
+
+HTML IS like skeeleton. CSS is like makeup and fashion
+
+
+look up DOM and containers. DOM seen by right clicking and inspecting element in browser
+
+CSS: #para1 {background-color:blue;
+}  whole div turns blue
+
+width attribute in CSS percents (width changes with window size) and pixels (absolute size, regardless of windows size)
+
+
+look up classes for CSS
+
+/* means CSS code is commented out
+
+*/ closes comment out
+
+CSS padding makes box bigger but also affects everything inside box, stuff in content. padding is inner space
+margin is outer space. stuff outside box. moves box around relative to window. inserts space all around box
+
+htmlcheatsheet.com
+
+
+<div>
+
+<h2>Title</h2>
+
+<p>new paragraph</p>
+</div>
+
+
+i'm <em>very</em> tired. <mark>oh well.</mark> <sub>time</sub> for <sup>html</sup>
+
+
+Nesting. something can go inside something else
+
+elements on page can go inside others. as long as follow certain rules
+elements can't overlap. must be inside other completely or separated
+
+<p>this is a <strong><mark>Super <i>nested</i></mark></strong> element</p>
+
+
+
+Smaller headings are used to show that one section is inside another.<br>
+
+<code>h1</code> is main heading. others are subheadings. Smaller headings are used to show that one section is inside another. 2 separate headings are same size if they're at the same level
+
+
+<p> You may have noticed that you don't actually have to use the p element as shown in our solution here. But like we mentioned earlier, it's a good idea to tell the browser what kind of content something is—by enclosing those paragraphs inside p elements, this is indicating that the contents are paragraphs of text. We'll explain more about why this matters in the next lesson, when you learn about something called CSS.</p>
+
+what is hr element called?
+
+<strong>element</strong> creates invisible box around text. (block) has height and width and margin above and below. is block element.
+
+em, br ae inline elements
+
+
+Like the paragraph p element, the division div element has an invisible box around it—and just like p, it can have a border, a margin, a width, a height, and so on.
+<br>
+p meant to contain text
+<br>
+div can contain anyting. is generic. organizes content, divides page into sections.  super important one, and it's used a lot in HTML to help lay out and organize pages
+
+some elements always uused inside others. don't make sense on own. li <ul><li>li IS INSIDE ol (number) or ul (dot)</li></ul>l
+<br> lists must be insdie ol or ul. don't necessarlily need closing tags for li ( each item in the list)
+
+<br>always needs closing tags for ol or ul (the whole list)
+
+p tags dont necessary need closing tag.  browser can figure out whre element should be closed. is implied.  wha??
+
+<em>note there is some some lined space (gap between lines after a closing OL tag and the next bit of text like following a paragraph closing tag.  </em>  don't forget em requires closing tag....
+
+You may have noticed that in the provided HTML code, we are adding type="a" to ol elements to specify that the ordered lists should use lowercase letters instead of the default numerical ordering (just like in the example at the top of this page).
+
+The type attribute for ol offers several options for list item markers:
+
+    "1" for numbers (the default)
+    "A" for uppercase letters
+    "a" for lowercase letters
+    "I" for uppercase Roman numerals
+    "i" for lowercase Roman numerals
+
+Feel free to experiment with these options to discover the different visual outcomes they produce.
+
+<p>
+Browsers are lenient on your sloppy code. Will fill in tags or guess at what you're saying. Validators are more strict<br>
+a href="https://validator.w3.org/">W3C validator is good</a>
+<br> Errors went from like 30 to 21 to 12 to 20 to 4 to 2 to 4 to 0. Finally<br>
+Validator checks syntax and struture. Up to you to make good page <br>
+
+
+
+</p>
+
+<p><a href="https://knowledge.udacity.com/">search for answers if confused</a>. and google. and shre erorr to figure out what went wrong and learn. Must Learn</p>
+</body></html>
