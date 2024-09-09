@@ -16,6 +16,12 @@
     <script src="script.js"></script>
   </head>
   <body>
+Revision 1. More needed. - 9/8/2024. 10 days to program end - Stuck on JS shopping cart. Need to finish Other bits of Udacity program. Hopefully future me can look back on my current confusion
+and frustration and feel accomplished and proud at having learn to overcome it.
+<!-- Revision 1 - 9/8/2024 - Stuck on JS shopping cart. Need to finish Other bits of Udacity program. Hopefully future me can look back on my current confusion
+and frustration and feel accomplished and proud at having learn to overcome it. -->
+
+
 
     <H1>HTML NOTES</H1>
     <h2>HyperText Markup Language</h2>
@@ -30,19 +36,20 @@
             </ul>
             <p>HTML is written in text (letters, numbers, symbols spaces). Browser takes HTML and displays page layout, which user sees. Can have links and references to other files embedded inside displayed web page.
               Markup makes text look different than plain text.
-              <br> & lt ; creates open bracket symbol around element that will be ignored by browser and display text. <br>
-              & gt ; creates close bracket to display element without using element in browser<br>
-              delete space between letters and semicolon for it ot work. Shown below.
+              <br> <strong>& lt ;</strong> creates open bracket symbol around element that will be ignored by browser and display text. <br>
+              <strong>& gt ;</strong> creates close bracket to display element without using element in browser<br>
+              delete space between letters and semicolon for it to work. Shown below:
 
-              <br>&lt;em&gt;Hi there!&lt;em&gt; : Emphasis element makes text look like this: <em>Hi there!</em>
+              <br><strong>&lt;em&gt;</strong><em>Hi there!</em><strong>&lt;em&gt;</strong> : Emphasis element makes text look like this: <em>Hi there!</em>
             Every elmenent needs start tag with angle brackets and closing tag with slash and angle brackets.
 
             </p>
         <br><a href="https://code.visualstudio.com/">VS Code:</a> A popular and good text editor for HTML. Or use notepad. Or Geany.
         <br> DO NOT use a word processor, or you'll get gibberish. <br>
-        A good text editor for HTML has syntax highlighting and line numbers. Make sure html files have .HTML extension.
+        A good text editor for HTML has syntax highlighting and line numbers. Make sure html files have .HTML extension.<br>
+        Use VSCode - Geany or plain text editors are for geniuses, perhaps?
 
-
+<!-- I have learned that a dedicated code editor makes things easier and faster -->
 
 
 
@@ -52,25 +59,31 @@
 
         <p>
           <h3>Whitespace</h3>Whitespace (spaces, tabs and line breaks)
-          gets collapsed into single space. Need other elements and tags to prettify text and make it look interesting and laid out.
+          all get collapsed into single space. (this enire line is split into
+          multiple lines in the HTML doc,
+          but will display together in browser)
+          Need other elements and tags to prettify text
+          and make it
+          look interesting and laid out.
           <br>
-          &lt;br&gt; LINE BREAK element returns wew line<br>
-          Like right <br>
-          here <br>
-          . Each line break is made with br element. Doesn't need closing tag<br> br is also void or empty tag.
+          <strong>&lt;br&gt;</strong> LINE BREAK element returns new line<br>
+          Like<br> right <br>
+          here. <br>
+          Each line break is made with br element. Doesn't need closing tag<br> br is also void or empty tag.
 <p>
-          P elment is better for double line than 2 br elements. Good to "tell the trush" in HTML. If something is a pararaph. Call it that with P element.
+          <strong>&lt;P&gt;</strong> elment is better for double line than 2 br elements. Good to "tell the truth" in HTML. If something is a pararaph. Call it that with P element.
 </p>
 <br> Remember: computers are stupid. Take everything literally. So give precise and correct instructions.
+And become very comfortable with breaking down complex or even seemingly easy problems into smaller, simpler steps in order to code well.
 
 <h2>More Elements</h2>
-&lt;mark&gt; and its closing tag highlight text. <mark>Like this.</mark>
-<br>&lt;sup&gt; (not super, derp) makes text a superscript. Like<sup> this</sup>.
-<br>&lt;sub&gt; and its closing tab make text subscript. Like <sub>this</sub>.
+<strong>&lt;mark&gt;</strong> and its closing tag highlight text. <mark>Like this.</mark>
+<br><strong>&lt;sup&gt;</strong> (not super, derp) makes text a superscript. Like<sup> this</sup>.
+<br><strong>&lt;sub&gt;</strong> and its closing tab make text subscript. Like <sub>this</sub>.
 <p>
-<strong>Nesting</strong> means something can go inside something else. Think Matroshka dolls. Or elments one inside another.
-<br>Paragraph elment usually has br tags inside or sup tags or mark.
-<br>Can't put paragraph inside another. elements can't overlap. One needs to be completely inside another
+<strong>Nesting</strong> means something can go inside something else. Think Matroshka dolls. Or elements one inside another.
+<br>Paragraph element usually has <strong>br</strong> tags inside or <strong>sup</strong> tags or <strong>mark</strong>.
+<br>Can't put paragraph inside another. elements can't overlap. <em>One needs to be completely inside another</em>
 <br></p>
 <h2>Headings</h2>Used headings of pages. H1 is main. 2-6 are subheadings. Smaller ones go inside bigger ones to show that sections are inside another. Same level heading would use same element. Be at same leve of importance / organizaton.
 
@@ -248,7 +261,7 @@ void / empty elements <br> <br>do not have closing tags. <p>since they don't con
 
 
 
-George Ingram says this is good site to see browser stuff: differences, quirks https://caniuse.com/?search=order
+George says this is good site to see browser stuff: differences, quirks: <a href="https://caniuse.com/?search=order">can i use?</a>
 
 opening tag is always tag with attributes
 
@@ -344,7 +357,7 @@ Feel free to experiment with these options to discover the different visual outc
 
 <p>
 Browsers are lenient on your sloppy code. Will fill in tags or guess at what you're saying. Validators are more strict<br>
-a href="https://validator.w3.org/">W3C validator is good</a>
+<a href="https://validator.w3.org/">W3C validator is good</a>
 <br> Errors went from like 30 to 21 to 12 to 20 to 4 to 2 to 4 to 0. Finally<br>
 Validator checks syntax and struture. Up to you to make good page <br>
 
